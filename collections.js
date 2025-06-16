@@ -43,9 +43,13 @@ function strToObj(str) {
 }
 
 function superTypeOf(value) {
+    if (value===undefined) {
+        return 'undefined'
+    }
     if (value === null) return 'null';
     if (value instanceof Map) return 'Map';
     if (value instanceof Set) return 'Set';
     if (Array.isArray(value)) return 'Array';
-    return typeof value === 'object' ? 'Object' : typeof value[0] === 'string' && value.length !== undefined ? 'String' : typeof value;
+    return typeof value === 'object' ? 'Object' : typeof value[0] === 'string' && value.length !== undefined ? 'String' : String((typeof value)).charAt(0).toUpperCase() + String((typeof value)).slice(1);
 }
+

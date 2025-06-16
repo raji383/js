@@ -7,28 +7,28 @@ function dogYears(name, age) {
             years = years * 1;
             break;
         case "mercury":
-            years = years * 0.2408467;
+            years = years / 0.2408467;
             break;
         case "venus":
-            years = years * 0.61519726;
+            years = years / 0.61519726;
             break;
         case "mars":
-            years = years * 1.8808158;
+            years = years / 1.8808158;
             break;
         case "jupiter":
-            years = years * 11.862615;
+            years = years / 11.862615;
             break;
         case "saturn":
-            years = years * 29.447498;
+            years = years / 29.447498;
             break;
         case "uranus":
-            years = years * 84.016846;
+            years = years / 84.016846;
             break;
         case "neptune":
-            years = years * 164.79132;
+            years = years / 164.79132;
             break;
     }
 
     return Number(years.toFixed(2));
 }
-console.log(dogYears("earth", 1000000000))
+console.log(dogYears("mercury", 2134835688))
