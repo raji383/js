@@ -1,4 +1,4 @@
-function Abs(int){
+function abs(int){
     if (int>=0) {
         return int
     }
@@ -11,5 +11,3 @@ function isPositive(int){
     }
     return false
 }
-const h=Abs(-10)
-console.log(h)

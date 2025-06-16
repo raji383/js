@@ -1,0 +1,2 @@
+const smalls= -1.7976931348623157e308-1.7976931348623157e308
+const biggie = Number.MAX_VALUE*2

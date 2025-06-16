@@ -29,6 +29,6 @@ function dogYears(name, age) {
             break;
     }
 
-    return years + " " + name + "-years old"
+    return Number(years.toFixed(2));
 }
 console.log(dogYears("earth", 1000000000))
