@@ -21,7 +21,7 @@ function sentence(array) {
         const element = array[index];
         s += element + ' '
     }
-    return s.trim() 
+    return s.trim()
 }
 
 function yell(string) {
@@ -29,20 +29,20 @@ function yell(string) {
 }
 
 function whisper(string) {
+    return '*' + string.toLowerCase() + '*'
+}
+function whisper1(string) {
     return string.toLowerCase()
 }
 
+
 function capitalize(string) {
-    let array = words(string)
-    for (let index = 0; index < array.length; index++) {
-        let word = array[index];
-        if (word.length > 0) {
-            let first = yell(word[0]);
-            let rest = whisper(word.slice(1));
-            array[index] = first + rest;
-        }
-    }
-    return sentence(array)
+
+    let first = yell(string[0]);
+    let rest = whisper1(string.slice(1));
+    const array = first + rest;
+
+    return array
 }
 
 console.log(capitalize('hI brO'))

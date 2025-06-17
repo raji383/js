@@ -1,23 +1,18 @@
-function sign(int){
-    if (int==0) {
-       return 0 
-    }else if (int<0) {
+function sign(int) {
+    if (int == 0) {
+        return 0
+    } else if (int < 0) {
         return -1
-    }else{
+    } else {
         return 1
     }
 }
-function sameSign(a,b){
-    if (sign(a)==0) {
-        return true
-    }
-    if (sign(b)==0) {
-        return true
-    }
-    if (sign(a)==sign(b)) {
+function sameSign(a, b) {
+
+    if (sign(a) == sign(b)) {
         return true
     }
     return false
 
 }
-console.log(sameSign(10,-89));
+console.log(sameSign(-10, 0));

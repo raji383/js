@@ -1,7 +1,8 @@
 const is = {};
 
 
-is.num = value => typeof value === 'number' && !Number.isNaN(value);
+is.num = value => typeof value === 'number';
+
 
 
 is.nan = value => Number.isNaN(value);
@@ -31,5 +32,5 @@ is.fun = value => typeof value === 'function';
 is.truthy = value => !!value;
 
 is.falsy = value => !value;
-console.log(is.nan(7));
+
 
